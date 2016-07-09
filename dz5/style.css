@@ -3,12 +3,16 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(HelveticaNeue.ttf);
+}
 body {
 	background-image: url(background.png);
 	background-size: 1829px;
     background-position: center center;
-    font-family: Tahoma;
-}
+    font-family: HelveticaNeue;
+ }
 .top-menu {
 	margin: 0 auto;
 	background-color: #074e8c;
