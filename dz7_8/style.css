@@ -81,10 +81,15 @@ header li a:hover {
 	font-family: League_Gothic;
 	font-size: 50px;
 }
+.slider_text p {
+	font-family: OpenSans;
+	font-size: 16px;
+}
 span {
 	text-transform: uppercase;
 	color: #e5b8f6;
 	font-weight: bolder;
+	font-size: 18px;
 }
 .slider_img {
 	width: 280px;
