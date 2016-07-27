@@ -276,16 +276,13 @@ content {
 }
 .brends {
     text-align: center;
-    
     padding-top: 26px;
     padding-bottom: 30px;
-    display: inline-block;
-    vertical-align: middle;
-
-    
 }
 .brends img {
 	margin: 0 15px;
+	display: inline-block;
+    vertical-align: middle;
 }
 .brends img:nth-child(5) {
     padding: 18px 0;
@@ -376,7 +373,7 @@ footer p {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 959px) {
 	nav {
 		width: 768px;
 	}
@@ -438,7 +435,7 @@ footer p {
  		right: 30px;
  	}
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 	nav {
 		width: 480px;
 	}
@@ -493,10 +490,7 @@ footer p {
  	}
  	.brends {
  		width: 480px;
- 		flex-wrap: wrap;
- 		flex-direction: column;
- 		margin: 0 auto;
- 		padding-left: 80px;
+ 		
  	}
  	.brends img {
  		width: 70px;
@@ -530,7 +524,7 @@ footer p {
 		box-sizing: border-box;
 	}
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	nav {
 		width: 320px;
 	}
