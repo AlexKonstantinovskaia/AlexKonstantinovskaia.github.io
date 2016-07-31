@@ -8,17 +8,28 @@ body {
 }
 @font-face {
     font-family: League_Gothic;
-    src: url(fonts/League_Gothic.otf);
-    
+    src: url("fonts/leaguegothic-regular-webfont.eot");
+    src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    	 url("fonts/leaguegothic-regular-webfont.woff") format("woff"), 
+    	 url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"),
+    	 url("fonts/leaguegothic-regular-webfont.svg") format("svg");
+
  }
+ 
  @font-face {
     font-family: OpenSans;
+    src: url("fonts/OpenSansRegular.eot");
+    src: url("fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+    	 url("fonts/OpenSansRegular.woff") format("woff"),
     src: url(fonts/2211.ttf);
  }
 
  @font-face {
  	font-family: OpenSansLight;
-    src: url(fonts/2209.ttf);
+ 	src: url("fonts/OpenSansLight.eot");
+    src: url("fonts/OpenSansLight.eot?#iefix") format("embedded-opentype"),
+    	 url("fonts/OpenSansLight.woff") format("woff"),
+    src: url(fonts/2209.ttf) format("truetype");
 
  }
 
@@ -33,9 +44,13 @@ nav {
 	margin: 0 auto;
 	margin-top: 30px;
 }
+
 nav .logo {
     padding-bottom: 17px;
+    border: none;
 }
+
+
 header ul{
 	display: inline-flex;
 }
@@ -162,6 +177,7 @@ span {
  .content_column h4 {
  	font-family: League_Gothic;
  	font-size: 18px;
+ 	text-align: right;
  }
 
 content {
@@ -283,6 +299,7 @@ content {
     text-align: center;
     padding-top: 26px;
     padding-bottom: 30px;
+    clear: both;
 }
 .brends img {
 	margin: 0 15px;
@@ -317,7 +334,7 @@ content {
 }
 .column_foot div {
 	padding-right: 60px;
-	width: 100%;
+	width: 30%;
 	color: #454545;
 }
 .column_foot div p {
@@ -382,6 +399,10 @@ footer p {
 	nav {
 		width: 768px;
 	}
+	header li a {
+		font-size: 18px;
+	}
+
 	.slider {
 		width: 768px;
 		justify-content: flex-start;
@@ -588,3 +609,4 @@ footer p {
 	    top: 55px;
 	}
 }
+
