@@ -4,6 +4,7 @@
 }
 body {
  	background: url(img/bgheader.jpg);
+ 	overflow-x: hidden; 
  
 }
 @font-face {
@@ -21,7 +22,7 @@ body {
     src: url("fonts/OpenSansRegular.eot");
     src: url("fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
     	 url("fonts/OpenSansRegular.woff") format("woff"),
-    src: url(fonts/2211.ttf);
+    	 url(fonts/2211.ttf);
  }
 
  @font-face {
@@ -29,7 +30,7 @@ body {
  	src: url("fonts/OpenSansLight.eot");
     src: url("fonts/OpenSansLight.eot?#iefix") format("embedded-opentype"),
     	 url("fonts/OpenSansLight.woff") format("woff"),
-    src: url(fonts/2209.ttf) format("truetype");
+    	 url(fonts/2209.ttf) format("truetype");
 
  }
 
@@ -49,7 +50,9 @@ nav .logo {
     padding-bottom: 17px;
     border: none;
 }
-
+header nav input {
+	display: none;
+}
 
 header ul{
 	display: inline-flex;
@@ -59,7 +62,10 @@ header li {
 	list-style: none;
 	margin-left: 50px;
 }
-header li:first-child {
+.top_menu li:first-child {
+	display: none;
+}
+header li:nth-child(2) {
 	margin-left: 0;
 }
 header li a {
@@ -400,7 +406,7 @@ footer p {
 		width: 768px;
 	}
 	header li a {
-		font-size: 18px;
+		font-size: 24px;
 	}
 
 	.slider {
@@ -463,26 +469,56 @@ footer p {
 }
 @media (max-width: 767px) {
 	nav {
+		display: block;
 		width: 480px;
+		text-align: center;
+		position: relative;
 	}
 	nav .logo {
 		margin: 0 auto;
 	}
 	header ul{
 	    display: block;
-	    position: absolute;
-	    top: 100px;
-	    left: 134px;
 	    text-align: center;
-	    background: #3b2e43;
+	    background: rgba(59, 46, 67, 0.64);
         width: 200px;
+        margin: 0 auto;
+        border-radius: 18px;
+        position: absolute;
+        left: 27%;
+        
 	}
+	.top_menu li {
+		display: none;
+	}
+	.top_menu li:first-child {
+		display: block;
+	}
+	.top_menu li:first-child span:first-child {
+		display: none;
+	}
+	nav input:checked + .top_menu li {
+		display: block;
+		
+	}
+	nav input:checked + .top_menu li:first-child span:last-child {
+		display: none;
+	}
+	nav input:checked + .top_menu li:first-child span:first-child {
+		display: block;
+		
+	}
+
 	header li {
 		margin-left: 0;
+	}
+	.top_menu li {
+	    margin: 10px 0;
 	}
 	.slider {
 		padding-left: 0;
 		width: 480px;
+
 	}
 	.slider_text p {
 		display: none;
@@ -557,6 +593,7 @@ footer p {
 	header ul {
 		left: 51px;
 	}
+
 	.slider {
 		width: 320px;
 	}
