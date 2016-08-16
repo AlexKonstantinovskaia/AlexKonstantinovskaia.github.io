@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		function isInt(x) {
+ 			return (x % 1 === 0);
+	    }
+
+		function pow() {
+			var number = prompt('Введите число');
+			var exp = prompt('Введите степень');
+			 	
+			if (isInt(number) && isInt(exp)) {
+				var result = Math.pow(number, exp);
+				console.log(result);
+				alert(result);
+			} else {
+				console.log('ERROR', Math.pow(number, exp));
+				alert('ERROR');
+			}
+		}
+
+	 	pow();
+
+	</script>
+</body>
+</html>
