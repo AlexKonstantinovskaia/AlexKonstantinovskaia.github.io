@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function name()	{
+			var arr = [];
+			for (var i = 0; i < 5; i++ ) {
+				arr[i] = prompt('Введите имя');
+			}
+			console.log(arr);
+
+			var userName = prompt('Введите имя пользователя');
+
+			for (var k = 0; k <= 5; k++ ) {
+				if(arr[k] == userName) {
+					alert(userName+', вы успешно вошли!');
+					return;
+
+				} 
+			} 
+ 			alert('Ошибка, не верно введено имя пользователя!');
+		}		
+		name();
+	</script>
+</body>
+</html>
