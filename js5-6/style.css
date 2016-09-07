@@ -1,0 +1,18 @@
+.container {
+	margin: 0 auto;
+	border: 3px solid grey;
+	border-radius: 5px;
+	padding: 20px 20px;
+ 	width: 54%;
+    margin-top: 59px;
+    background-color: #E0FFFF;
+}
+.number {
+	display: flex;
+	justify-content: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
