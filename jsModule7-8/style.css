@@ -10,14 +10,14 @@
     display:block;
     clear:both;
 }
-/* Ð¿Ð°Ð½ÐµÐ»ÑŒ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸ Ð²ÐºÐ»Ð°Ð´Ð¾Ðº */
+
 .tabs {
     margin: 0;
     padding: 0;
     list-style: none;
     float:left;
 }
-/* ÑÐ¿Ð¸ÑÐ¾Ðº Ð²ÐºÐ»Ð°Ð´Ð¾Ðº */
+
 .tabs li {
     text-align:center;
     float:left;
@@ -30,12 +30,11 @@
     -webkit-transition-delay:.2s 0s;
     transition:all .2s linear 0s;
 }
-/* Ð°ÐºÑ‚Ð¸Ð²Ð½Ð°Ñ Ð²ÐºÐ»Ð°Ð´ÐºÐ° */
+
 .tabs li.active {
     background:#fdfdfd;
     color:#4F5559; 
 }
-/* Ð±Ð»Ð¾ÐºÐ¸ Ð²ÐºÐ»Ð°Ð´Ð¾Ðº Ñ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ð½Ð¸ÐµÐ¼ */
 .box {
     background:#fdfdfd;
     width:96%;
@@ -44,30 +43,30 @@
     text-align: left;
     float: left;
 }
-/* Ð¿Ð°Ñ€Ð°Ð³Ñ€Ð°Ñ„ Ð²Ð½ÑƒÑ‚Ñ€Ð¸ Ð²ÐºÐ»Ð°Ð´Ð¾Ðº */
+
 .box p {
     margin-bottom: 15px;
 }
-/* Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð¿Ñ€Ð¸ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐµ */
+
 .visible, .open_tab {
     display: block;
 }
-/* ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð²Ð½ÑƒÑ‚Ñ€Ð¸ Ð²ÐºÐ»Ð°Ð´Ð¾Ðº */
+
 .box img {
     width: 25%;
     height: auto;
 }
-/* ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ ÑÐ»ÐµÐ²Ð° */
+
 .pl-left {
     float:left;
     margin:5px 15px 5px 0;
 }
-/* ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ ÑÐ¿Ñ€Ð°Ð²Ð° */
+
 .pl-right {
     float:right;
     margin:5px 0 5px 15px;
 }
-/* ÑƒÐ±Ð¸Ñ€Ð°ÐµÐ¼ Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð½Ð° Ð¼Ð°Ð»ÐµÐ½ÑŒÐºÐ¸Ñ… ÑÐºÑ€Ð°Ð½Ð°Ñ… */
+
 @media (max-width: 300px) {
   .tabs, .tabs li {
    float: none;
