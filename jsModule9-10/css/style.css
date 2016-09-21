@@ -1,0 +1,481 @@
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: -50px;
+}
+
+.jcarousel-control-next {
+    right: -50px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    
+    margin-right: 2px;
+    
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+/*end Carousel*/
+
+
+.wrap_select {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+/*select box start*/
+
+.select_item {
+    width: 300px;
+    margin: 0 auto;
+    height: 300px;
+    float: left;
+}
+div.fancy-select {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #46565D;
+}
+
+div.fancy-select.disabled {
+    opacity: 0.5;
+}
+
+div.fancy-select select:focus + div.trigger {
+    box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+    box-shadow: none;
+}
+
+div.fancy-select div.trigger {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 24px 9px 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    background: #99A5BE;
+    border: 1px solid #99A5BE;
+    border-top-color: #A5B2CB;
+    color: #4B5468;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 270px;
+
+    transition: all 240ms ease-out;
+    -webkit-transition: all 240ms ease-out;
+    -moz-transition: all 240ms ease-out;
+    -ms-transition: all 240ms ease-out;
+    -o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #4B5468;
+    top: 20px;
+    right: 9px;
+}
+
+div.fancy-select div.trigger.open {
+    background: #4A5368;
+    border: 1px solid #475062;
+    color: #7A8498;
+    box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+    border-top-color: #7A8498;
+}
+
+div.fancy-select ul.options {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 50;
+    max-height: 200px;
+    overflow: auto;
+    background: #62C8BF;
+    border-radius: 4px;
+    border-top: 1px solid #7DD8D2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    padding-left: 0;
+
+    transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+    visibility: visible;
+    top: 50px;
+    opacity: 1;
+
+    /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+    /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+    transition: opacity 300ms ease-out, top 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+    top: auto;
+    bottom: 40px;
+
+    transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+    top: auto;
+    bottom: 50px;
+
+    transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+    padding: 8px 12px;
+    color: #2B8686;
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition: all 150ms ease-out;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+    background: rgba(43,134,134,0.3);
+    color: rgba(255,255,255,0.75);
+}
+
+div.fancy-select ul.options li.hover {
+    color: #fff;
+}
+
+/*select-box end*/
+
+
+
+/*container chechbox*/
+
+.container_checkbox {
+    display: block;
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    float: right;
+}
+.css_check {
+    float: left;
+}
+
+.js_check {
+    float: right;
+}
+
+
+
+/* css check-box start*/
+.css_check input[type=checkbox] {
+    display:none;
+}
+
+.css_check label {
+    cursor: pointer;
+}
+
+.css_check label:after {
+    margin-left:5px;
+    content: " ";
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: url(../images/checkbox.png);
+    position: relative;
+    top: 7px;
+}
+
+.css_check input[type=checkbox]:checked + label:after {
+    background-position: 0 -58px;
+}
+
+.css_check input[type=checkbox]:disabled + label:after {
+    background-position: 0 -88px;
+}
+
+.css_check label:hover:after {
+    background-position: 0 -29px;
+}
+
+.css_check input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -58px;
+}
+
+/*css checkbox end*/
+
+      
+/*js checkbox start*/
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png);
+}
+.niceCheck input {
+display: none;
+}
+/*js chechbox end*/
+
+
+/*nav head menu start*/
+
+.menu_top{
+    display:block;
+    background: cadetblue; 
+    text-align: center;
+}
+.menu_top li{
+    display: inline-block;
+    position: relative;
+    z-index:100;
+}
+.menu_top li a {
+    font-weight:600;
+    text-decoration:none;
+    padding:11px;
+    display:block;
+    color:#ffffff;
+ 
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.menu_top li a:hover,
+.menu_top li:hover > a{
+    color:#ffffff;
+    background:#9CA3DA;
+}
+.menu_top ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+/* показываем меню второго уровня при наведении */
+.menu_top li:hover > ul{
+    display: block;
+}
+.menu_top ul li {
+    display:block;
+    float: none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+.menu_top ul li a {
+    font-size:12px;
+    font-weight:normal;
+    display:block;
+    color:#797979;
+    border-left:3px solid #ffffff;
+    background:#ffffff;
+}
+.menu_top ul li a:hover,
+.menu_top ul li:hover > a{
+    background:#f0f0f0;
+    border-left:3px solid #9CA3DA;
+    color:#797979;
+}
+.menu_top ul ul {
+    left: 149px;
+    top: 0px;
+}
