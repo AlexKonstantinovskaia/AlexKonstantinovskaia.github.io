@@ -1,0 +1,14 @@
+body {
+	background: #4CAF50;
+}
+.wrapper {
+    width: 500px;
+    background: white;
+    margin: 0 auto;
+    border: 1px solid;
+    text-align: center;
+    box-shadow: -4px 2px 57px -3px rgba(0,0,0,0.75);
+ }
+ .block ul {
+ 	list-style: none;
+ }

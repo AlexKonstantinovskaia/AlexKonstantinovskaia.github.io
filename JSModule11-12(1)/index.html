@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="tmpl.js"></script>
+	<script src="js.js"></script>
+
+</head>
+<body>
+	<script type="text/template" id="page">
+      <div class="wrapper">
+      <% for (var i = 0; i < data.length; i++) { %>
+          <div class="block">
+            <h1><%= data[i].title %></h1>
+            <img src="http://photo-element.ru/ps/passport/author.jpg" alt="">
+            <p class="caption"><%= data[i].position %></p>
+          </div>
+          <div class="block">
+            <h2><%= data[i].info %></h2>
+            <ul>
+              <% for (var j = 0; j < data.length; j++) { %>
+                <li><%= data[i].stm1 %></li>
+                <li><%= data[i].stm2 %></li>
+                <li><%= data[i].stm3 %></li>
+              <% }; %>
+            </ul>
+          </div>
+          <div class="block">
+            <h2><%= data[i].contact %></h2>
+            <p class="tel"><%= data[i].phone %></p>
+            <h2><%= data[i].profile %></h2>
+            <a href="https://vk.com" class="link" target="_blank"><%= data[i].link %></a>
+          </div>
+            <h2><%= data[i].feedback %></h2>
+            <p class="feedback"><%= data[i].feedback2 %></p>
+        </div>
+      <% }; %>
+    </script>
+
+	
+</body>
+</html>
