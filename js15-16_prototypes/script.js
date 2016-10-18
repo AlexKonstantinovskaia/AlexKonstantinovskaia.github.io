@@ -25,7 +25,7 @@ var NewWorker = new worker();
 console.log('NewWorker.name', NewWorker.name);
 
 function student() {
-	this.stady = '';
+	this.stady = 'University';
 	this.grant = 200;
 	this.watch = function () {
 		alert('Watch_series');
